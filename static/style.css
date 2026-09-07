@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    height: 100vh;
+}
+
+.app {
+    width: 100%;
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #172554;
+    color: white;
+    padding: 22px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #cbd5e1;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.status span {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e0e7ff;
+    border-radius: 50%;
+}
+
+.bubble {
+    max-width: 75%;
+    background: #f1f5f9;
+    padding: 15px 18px;
+    border-radius: 12px;
+    line-height: 1.6;
+}
+
+.bubble strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.bubble p {
+    margin-top: 7px;
+}
+
+.user {
+    justify-content: flex-end;
+}
+
+.user .bubble {
+    background: #dbeafe;
+}
+
+.user .avatar {
+    order: 2;
+    background: #bfdbfe;
+}
+
+.input-area {
+    padding: 20px;
+    border-top: 1px solid #e2e8f0;
+
+    display: flex;
+    gap: 12px;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+
+    padding: 12px;
+    font-size: 15px;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+}
+
+button {
+    width: 100px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 18px;
+    }
+
+    .status {
+        display: none;
+    }
+
+    .chat-box {
+        padding: 15px;
+    }
+
+    .bubble {
+        max-width: 85%;
+    }
+}

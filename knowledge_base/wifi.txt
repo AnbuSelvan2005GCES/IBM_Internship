@@ -1,0 +1,24 @@
+WIFI TROUBLESHOOTING
+
+Problem:
+Computer is connected to Wi-Fi but Internet is not working.
+
+Steps:
+
+1. Check whether other devices can access the Internet.
+2. Restart the Wi-Fi router.
+3. Disconnect and reconnect to the Wi-Fi network.
+4. Restart the computer.
+5. Open Command Prompt and run:
+
+ipconfig /flushdns
+
+6. Run:
+
+ipconfig /release
+ipconfig /renew
+
+7. Check whether the problem affects all websites.
+8. If other devices also cannot access the Internet, contact the network administrator or ISP.
+
+If the problem continues after these steps, escalate the issue to IT support.

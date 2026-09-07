@@ -1,0 +1,16 @@
+PRINTER TROUBLESHOOTING
+
+Problem:
+Printer is not printing.
+
+Steps:
+
+1. Check whether the printer is powered on.
+2. Check the USB or network connection.
+3. Check whether the correct printer is selected.
+4. Check the printer queue.
+5. Cancel stuck print jobs.
+6. Restart the printer.
+7. Restart the computer.
+8. Check whether the printer reports paper or ink problems.
+9. If the printer is connected to a company network, contact IT support if the issue continues.

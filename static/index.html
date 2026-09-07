@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI IT Helpdesk Agent</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+
+            <div>
+                <h1>🤖 AI IT Helpdesk</h1>
+
+                <p>
+                    AI-powered technical support assistant
+                </p>
+            </div>
+
+            <div class="status">
+                <span></span>
+                AI Online
+            </div>
+
+        </header>
+
+
+        <main class="chat-container">
+
+            <div id="chatBox" class="chat-box">
+
+                <div class="message bot">
+
+                    <div class="avatar">
+                        🤖
+                    </div>
+
+                    <div class="bubble">
+
+                        <strong>
+                            AI Helpdesk
+                        </strong>
+
+                        <p>
+                            Hello! 👋
+                        </p>
+
+                        <p>
+                            Describe your IT problem and
+                            I'll help diagnose it.
+                        </p>
+
+                        <p>
+                            Example:
+                            <br>
+                            "My Wi-Fi is connected but
+                            Internet is not working."
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="input-area">
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Describe your IT problem..."
+                    rows="2"
+                ></textarea>
+
+                <button
+                    id="sendButton"
+                    onclick="sendMessage()"
+                >
+                    Send
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
