@@ -1,107 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <title>AI IT Helpdesk</title>
 
-    <title>AI IT Helpdesk Agent</title>
-
-    <link
-        rel="stylesheet"
-        href="/static/style.css"
-    >
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="app">
 
-        <header class="header">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
 
-            <div>
-                <h1>🤖 AI IT Helpdesk</h1>
+            <div class="brand">
+                <div class="brand-icon">⚡</div>
 
-                <p>
-                    AI-powered technical support assistant
-                </p>
+                <div>
+                    <h2>IT<span>Helpdesk</span></h2>
+                    <p>AI Support Agent</p>
+                </div>
             </div>
 
-            <div class="status">
-                <span></span>
-                AI Online
+            <div class="sidebar-section">
+                <p class="section-title">QUICK ISSUES</p>
+
+                <button class="quick-btn" onclick="setProblem('Wi-Fi is connected but Internet is not working')">
+                    📡 Wi-Fi Problem
+                </button>
+
+                <button class="quick-btn" onclick="setProblem('I forgot my password')">
+                    🔐 Password Issue
+                </button>
+
+                <button class="quick-btn" onclick="setProblem('My printer is not working')">
+                    🖨️ Printer Problem
+                </button>
+
+                <button class="quick-btn" onclick="setProblem('My computer is very slow')">
+                    🐌 Slow Computer
+                </button>
+
+                <button class="quick-btn" onclick="setProblem('My computer has a blue screen')">
+                    💻 Blue Screen
+                </button>
             </div>
 
-        </header>
+            <div class="sidebar-bottom">
 
+                <div class="status">
+                    <span class="status-dot"></span>
 
-        <main class="chat-container">
-
-            <div id="chatBox" class="chat-box">
-
-                <div class="message bot">
-
-                    <div class="avatar">
-                        🤖
+                    <div>
+                        <strong>AI System Online</strong>
+                        <small>Ready to assist</small>
                     </div>
+                </div>
 
-                    <div class="bubble">
+                <div class="powered">
+                    Powered by Gemini AI
+                </div>
 
-                        <strong>
-                            AI Helpdesk
-                        </strong>
+            </div>
 
-                        <p>
-                            Hello! 👋
-                        </p>
+        </aside>
 
-                        <p>
-                            Describe your IT problem and
-                            I'll help diagnose it.
-                        </p>
 
-                        <p>
-                            Example:
-                            <br>
-                            "My Wi-Fi is connected but
-                            Internet is not working."
-                        </p>
+        <!-- MAIN -->
+        <main class="main">
+
+            <!-- HEADER -->
+            <header class="topbar">
+
+                <div>
+                    <h1>AI IT Helpdesk</h1>
+                    <p>Diagnose your technical problems instantly</p>
+                </div>
+
+                <div class="online-badge">
+                    <span></span>
+                    ONLINE
+                </div>
+
+            </header>
+
+
+            <!-- CHAT AREA -->
+            <section class="chat-container">
+
+                <div id="chatBox" class="chat-box">
+
+                    <!-- AI WELCOME -->
+                    <div class="message ai-message">
+
+                        <div class="avatar ai-avatar">
+                            🤖
+                        </div>
+
+                        <div class="message-content">
+
+                            <div class="message-name">
+                                AI Assistant
+                                <span>● Online</span>
+                            </div>
+
+                            <div class="bubble">
+
+                                <h3>👋 Hello! I'm your IT Support Agent.</h3>
+
+                                <p>
+                                    Tell me about your technical problem and
+                                    I'll analyze it using the IT knowledge base.
+                                </p>
+
+                                <div class="welcome-tags">
+                                    <span>🔍 Diagnosis</span>
+                                    <span>🧠 AI Analysis</span>
+                                    <span>🛠️ Solutions</span>
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
 
+                <!-- INPUT -->
+                <div class="input-area">
 
-            <div class="input-area">
+                    <div class="input-wrapper">
 
-                <textarea
-                    id="messageInput"
-                    placeholder="Describe your IT problem..."
-                    rows="2"
-                ></textarea>
+                        <textarea
+                            id="message"
+                            placeholder="Describe your IT problem..."
+                            rows="1"
+                        ></textarea>
 
-                <button
-                    id="sendButton"
-                    onclick="sendMessage()"
-                >
-                    Send
-                </button>
+                        <button id="sendBtn" onclick="sendMessage()">
+                            <span>Send</span>
+                            ➤
+                        </button>
 
-            </div>
+                    </div>
+
+                    <div class="input-hint">
+                        Press <b>Enter</b> to send · Shift + Enter for new line
+                    </div>
+
+                </div>
+
+            </section>
 
         </main>
 
     </div>
 
-
-    <script src="/static/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
