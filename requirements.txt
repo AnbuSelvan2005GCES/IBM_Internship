@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+gennai
+sentence-transformers
+faiss-cpu
+pydantic

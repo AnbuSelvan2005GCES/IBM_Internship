@@ -1,0 +1,18 @@
+Problem: Computer is slow
+
+Possible causes:
+- Too many startup applications
+- Low RAM
+- High CPU usage
+- Low disk space
+- Malware
+- Background applications
+
+Troubleshooting:
+1. Open Task Manager.
+2. Check CPU and memory usage.
+3. Disable unnecessary startup applications.
+4. Delete temporary files.
+5. Free disk space.
+6. Restart the computer.
+7. Scan the system for malware.

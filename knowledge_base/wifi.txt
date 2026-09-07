@@ -1,0 +1,19 @@
+Problem: WiFi not connecting
+
+Possible causes:
+- WiFi adapter is disabled
+- Incorrect password
+- Router problem
+- IP address configuration problem
+- DNS problem
+
+Troubleshooting:
+1. Check whether WiFi is enabled.
+2. Disconnect and reconnect to the network.
+3. Restart the router.
+4. Restart the computer.
+5. Run ipconfig /release.
+6. Run ipconfig /renew.
+7. Run ipconfig /flushdns.
+
+If the problem continues, check the network adapter driver.
