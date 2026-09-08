@@ -6,6 +6,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from google import genai
+from fastapi.responses import FileResponse
 
 
 # ============================================================
@@ -137,9 +138,7 @@ class ChatRequest(BaseModel):
 
 @app.get("/")
 async def home():
-    return {
-        "message": "AI IT Helpdesk Agent is running"
-    }
+    return FileResponse("static/index.html")
 
 
 # ============================================================
